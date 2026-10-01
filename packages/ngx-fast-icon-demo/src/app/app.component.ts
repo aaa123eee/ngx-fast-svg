@@ -1,4 +1,4 @@
-import { Component, inject, PLATFORM_ID } from '@angular/core';
+import { Component, inject, PLATFORM_ID, ChangeDetectionStrategy } from '@angular/core';
 import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
 
 import { filter, map, Observable, startWith } from 'rxjs';
@@ -13,6 +13,7 @@ import { AsyncPipe, isPlatformServer } from '@angular/common';
       <router-outlet />
     </app-shell>
   `,
+    changeDetection: ChangeDetectionStrategy.Eager,
     imports: [
         ShellComponent,
         AsyncPipe,

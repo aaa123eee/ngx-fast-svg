@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
   standalone: true,
   selector: 'app-desc',
+  changeDetection: ChangeDetectionStrategy.Eager,
   template: `
     <h1>Performance comparison of different svg-icons solutions in Angular</h1>
     <ol>

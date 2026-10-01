@@ -19,7 +19,12 @@
         "packages/ngx-fast-lib/src/index.ts",
         "packages/ngx-fast-lib/src/lib/*"
       ]
-    }
+    },
+    "strict": false,
+    "noUncheckedSideEffectImports": false,
+    "types": ["*"],
+    "esModuleInterop": false,
+    "ignoreDeprecations": "6.0"
   },
   "exclude": ["node_modules", "tmp"]
 }
