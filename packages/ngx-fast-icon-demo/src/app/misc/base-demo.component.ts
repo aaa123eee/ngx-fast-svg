@@ -1,9 +1,8 @@
-import { Component, computed, inject, input, OnInit, ChangeDetectionStrategy } from '@angular/core';
+import { Component, computed, inject, input, OnInit } from '@angular/core';
 import { IconTester } from './icon-tester.service';
 
 @Component({
   standalone: true,
-  changeDetection: ChangeDetectionStrategy.Eager,
   template: ``,
 })
 export class BaseDemoComponent implements OnInit {

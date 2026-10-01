@@ -32,12 +32,11 @@ export default [
   {
     // Newly enabled by the angular-eslint v22 recommended set; was not
     // enforced before the ESLint v9 upgrade. This demo app exists purely to
-    // compare third-party icon libraries side by side, several of which
-    // force Default change detection or wire click handlers without a
-    // matching keyboard handler on their own example markup.
+    // compare third-party icon libraries side by side, and its own shell
+    // wires a click handler without a matching keyboard handler on its
+    // sidenav toggle.
     files: ['**/*.ts', '**/*.html'],
     rules: {
-      '@angular-eslint/prefer-on-push-component-change-detection': 'off',
       '@angular-eslint/template/click-events-have-key-events': 'off',
       '@angular-eslint/template/interactive-supports-focus': 'off',
     },

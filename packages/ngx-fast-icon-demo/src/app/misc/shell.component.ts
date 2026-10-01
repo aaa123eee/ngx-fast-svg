@@ -1,4 +1,4 @@
-import { Component, inject, Input, ViewChild, ChangeDetectionStrategy } from '@angular/core';
+import { Component, inject, Input, ViewChild } from '@angular/core';
 import { AsyncPipe } from '@angular/common';
 import { FastSvgComponent } from '@push-based/ngx-fast-svg';
 import { IonicModule } from '@ionic/angular';
@@ -260,7 +260,6 @@ import { IconTester } from './icon-tester.service';
       }
     }
   `],
-    changeDetection: ChangeDetectionStrategy.Eager,
     imports: [
         AsyncPipe,
         FastSvgComponent,
