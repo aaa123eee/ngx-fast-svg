@@ -4,19 +4,16 @@
   "projectType": "application",
   "sourceRoot": "packages/ngx-fast-icon-demo/src",
   "prefix": "app",
+  "tags": [],
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:application",
-      "outputs": [
-        "{options.outputPath}"
-      ],
+      "outputs": ["{options.outputPath}"],
       "options": {
         "outputPath": "dist/packages/ngx-fast-icon-demo",
         "index": "packages/ngx-fast-icon-demo/src/index.html",
         "browser": "packages/ngx-fast-icon-demo/src/main.ts",
-        "polyfills": [
-          "zone.js"
-        ],
+        "polyfills": ["zone.js"],
         "tsConfig": "packages/ngx-fast-icon-demo/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
         "assets": [
@@ -54,7 +51,8 @@
           "buildTarget": "ngx-fast-icon-demo:build:development"
         }
       },
-      "defaultConfiguration": "development"
+      "defaultConfiguration": "development",
+      "continuous": true
     },
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
@@ -71,6 +69,5 @@
         ]
       }
     }
-  },
-  "tags": []
+  }
 }

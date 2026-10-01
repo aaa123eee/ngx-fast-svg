@@ -1,5 +1,4 @@
-import { DOCUMENT } from '@angular/common';
-import { inject, Injectable } from '@angular/core';
+import { DOCUMENT, inject, Injectable } from '@angular/core';
 import { BehaviorSubject, map, Observable } from 'rxjs';
 import { SvgOptionsToken } from './token/svg-options.token';
 import { suspenseSvg } from './token/default-token-values';

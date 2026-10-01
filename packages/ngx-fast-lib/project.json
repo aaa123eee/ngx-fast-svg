@@ -4,20 +4,20 @@
   "projectType": "library",
   "sourceRoot": "packages/ngx-fast-lib/src",
   "prefix": "ngx-fast-svg",
+  "tags": [],
   "targets": {
     "build": {
       "executor": "@nx/angular:package",
       "outputs": ["{workspaceRoot}/dist/libs/ngx-fast-svg"],
       "options": {
-        "project": "packages/ngx-fast-lib/ng-package.json"
+        "project": "packages/ngx-fast-lib/ng-package.json",
+        "tsConfig": "packages/ngx-fast-lib/tsconfig.lib.json"
       },
       "configurations": {
         "production": {
           "tsConfig": "packages/ngx-fast-lib/tsconfig.lib.prod.json"
         },
-        "development": {
-          "tsConfig": "packages/ngx-fast-lib/tsconfig.lib.json"
-        }
+        "development": {}
       },
       "defaultConfiguration": "production"
     },
@@ -26,7 +26,8 @@
       "outputs": ["{workspaceRoot}/coverage/packages/ngx-fast-lib"],
       "options": {
         "jestConfig": "packages/ngx-fast-lib/jest.config.ts",
-        "passWithNoTests": true
+        "passWithNoTests": true,
+        "tsConfig": "packages/ngx-fast-lib/tsconfig.spec.json"
       }
     },
     "lint": {
@@ -77,6 +78,5 @@
         ]
       }
     }
-  },
-  "tags": []
+  }
 }
